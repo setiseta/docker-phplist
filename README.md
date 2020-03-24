@@ -23,6 +23,7 @@ Docker Container with phplist
 - network 'frontend' is where nginx reverse proxy connects
 - network 'mail' is where mail system is, if its not on docker remove it.
 - you may need to change permissions on data/images.
+
 ```
 version: '2'
 services:
@@ -63,5 +64,4 @@ networks:
     external: true
   mail:
     external: true
-
 ```
